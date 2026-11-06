@@ -1,0 +1,159 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+#logo {
+    width: 100%;
+}
+
+#burger-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-btn{
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    margin: 20px;
+}
+
+nav {
+    height: 100px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+nav.menu-abierto{
+    display: flex;
+}
+
+.titulo {
+    color: white;
+    margin: 25px;
+    font-family: "Cinzel Decorative", serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: aquamarine;
+}
+
+.posters-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.poster {
+    width: 100%;
+    margin: 5px;
+}
+
+.stickers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.sticker {
+    width: 80%;
+}
+
+h4 {
+    font-size: 20px;
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+.contact{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    #burger-menu{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .posters-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .poster:nth-child(2){
+        margin-top: 30px;
+    }
+
+    .stickers-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sticker {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .stickers-container{
+        gap: 40px;
+    }
+    .sticker {
+        width: 20%;
+    }
+
+    .posters-container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    .poster:nth-child(1){
+        margin-top: 40px;
+    }
+    .poster:nth-child(2){
+        margin-top: 0px;
+    }
+    .poster:nth-child(3){
+        margin-top: 80px;
+    }
+    .poster:nth-child(4){
+        margin-top: 20px;
+    }
+}

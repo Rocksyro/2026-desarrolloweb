@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/images/logo.png" alt="logo" id="logo">
+        <div id="burger-menu">
+            <button class="menu-btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false"> ☰ </button>
+        </div>
+        <nav id="menu">
+            <a href="https://www.nikosayag.com/l23181wlknpoelyl157mpbphlcx" class="link">Posters</a>
+            <a href="" class="link">Logos</a>
+            <a href="" class="link">Album Covers</a>
+            <a href="" class="link">Shakedown Bar</a>
+            <a href="" class="link">Brand Banners</a>
+            <a href="" class="link">Pen & Paper</a>
+            <a href="./contact.html" class="link">Contact</a>
+        </nav>
+    </header>
+    <main class="contact">
+        <h1>CONTACT</h1>
+        <h2>(301) 814- 3103</h2>
+        <h3>nikosayag@gmail.com</h3>
+        <form class="form" action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <label for="msj">Mensaje:</label>
+            <input type="text" name="msj" id="msj" />
+            <section>
+                <label for="state">Estado civil:</label>
+                <input type="radio" name="state" id="state" value="casado"> Casado/da
+                <input type="radio" name="state" id="state" value="soltero"> Soltero/ra
+                <input type="radio" name="state" id="state" value="union"> Unión convivencial
+            </section>
+            <section>
+                <label for="talles"> Talles: </label>
+                <select name="talles">
+                    <option value="L">Large</option>
+                    <option value="M">Medium</option>
+                    <option value="S">Small</option>
+                </select>
+            </section>
+            <section>
+                <label for="condition">Acepta términos y condiciones</label>
+                <input type="checkbox" name="condition" value="1" />
+            </section>
+
+            <br>
+            <input type="submit" value="Enviar formulario" />
+            <input type="reset" value="Limpiar formulario" />
+            <input type="button" value="Sin acciones" />
+        </form>
+    </main>
+    <footer>
+        <p>© Niko Sayag. All rights reserved.</p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
